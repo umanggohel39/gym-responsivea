@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="maindv">
+        <form action="login.html" onsubmit="return validateFn()">
+            <h3>REGISTER</h3>
+
+            <input type="text" placeholder="Enter First Name*" id="f_name" class="inptbx" onkeyup="validateFn()"><br>
+            <span id="spn1" class="spn"></span><br><br>
+
+            <input type="text" placeholder="Enter Last Name*" id="l_name" class="inptbx" onkeyup="validateFn()"><br>
+            <span id="spn2" class="spn"></span><br><br>
+
+            <input type="text" placeholder="Enter User Name*" id="u_name" class="inptbx" onkeyup="validateFn()"><br>
+            <span id="spn3" class="spn"></span><br><br>
+
+            <input type="text" placeholder="Enter Password*" id="pswd" class="inptbx" onkeyup="validateFn()"><br>
+            <span id="spn4" class="spn"></span><br><br>
+
+            <input type="submit"  value="REGISTER" id="btn" onsubmit="validateFn()"><br><br>
+            <p style="text-align: center;">Already a member? <a href="login.html" style="text-decoration: none;">Login now</a></p>
+            <span id="err"></span>
+
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

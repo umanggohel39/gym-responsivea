@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="maindv">
+        <form action="" onsubmit="return validatelgn()">
+            <h3>LOGIN</h3>
+
+            <input type="text" placeholder="Enter User Name*" id="u_name2" class="inptbx" onkeyup="validatelgn()"><br>
+            <span id="spn1" class="spn"></span><br><br>
+
+            <input type="text" placeholder="Enter Password*" id="pswd2" class="inptbx" onkeyup="validatelgn()"><br>
+            <span id="spn2" class="spn"></span><br><br>
+
+            <input type="submit"  value="LOGIN" id="btn" onsubmit="validatelgn()"><br><br>
+            <p style="text-align: center;">Not a member? <a href="register.html" style="text-decoration: none;">Signup now</a></p>
+            <span id="err"></span> 
+
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
